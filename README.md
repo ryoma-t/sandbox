@@ -327,6 +327,34 @@
     - infinite loop
     - vertex, vertices (plural)
 
+## Graph
+### What is Graph Traversal
+Graph traversal is an algorighm to **visit every node** of a graph.
+
+### Abstract Traversal Algorithm
+#### Depth First Search
+- Choose a node.
+- Choose an adjacent node.
+    - If we've already visited the current node, backtrack to the previous node, and choose another adjacent node.
+    - If the current node doesn't have any unvisited adjacent node, backtrack to the last node with unvisited nodes.
+    - Otherwise, repeat those operations.
+ 
+#### Breadth First Search
+`TBD`
+
+### Concrete Traversal Implementations
+| DFS or BFS | Graph Implementation | Data Structure | Code Sample | Commnet |
+|------------|------------|------------|------------|------------|
+| DFS | Adjacency Matrix | Recursion | [AdjacencyMatrixGraph.dfsRecursion](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/data_structure/AdjacencyMatrixGraph.java#L36) |  |
+| DFS | Adjacency Matrix | Stack | [AdjacencyMatrixGraph.dfsStack](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/data_structure/AdjacencyMatrixGraph.java#L62)  |  |
+| DFS | Adjacency List | Recursion | `TBD` |  |
+| DFS | Adjacency List | Stack | `TBD` |  |
+| DFS | Tree Node | Recursion | [TreeDFS.dfsRecursion](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/algorithm/TreeDFS.java#L7) | This method can be used only for connected and acyclic graphs i.e. trees. |
+| DFS | Tree Node | Stack | [TreeDFS.dfsStack](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/algorithm/TreeDFS.java#L26) | This method can be used only for connected and acyclic graphs i.e. trees. |
+| BFS | Adjacency Matrix | Queue | `TBD` |  |
+| BFS | Adjacency List | Queue | `TBD` |  |
+| BFS | Tree Node | Queue | `TBD` | This method can be used only for connected and acyclic graphs i.e. trees. |
+
 
 
 ## Reference
