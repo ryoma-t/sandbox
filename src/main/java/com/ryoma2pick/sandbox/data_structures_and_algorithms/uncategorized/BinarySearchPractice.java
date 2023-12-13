@@ -1,4 +1,4 @@
-package org.example;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.uncategorized;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.pramp.array_of_array_products;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.pramp.array_of_array_products;
 
 public class ArrayOfArrayProducts {
 

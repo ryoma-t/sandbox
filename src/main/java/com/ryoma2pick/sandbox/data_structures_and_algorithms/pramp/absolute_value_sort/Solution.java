@@ -1,4 +1,4 @@
-package org.pramp.absolute_value_sort;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.pramp.absolute_value_sort;
 
 import java.util.Arrays;
 import java.util.Comparator;

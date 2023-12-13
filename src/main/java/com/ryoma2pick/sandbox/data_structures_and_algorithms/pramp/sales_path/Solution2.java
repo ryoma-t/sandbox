@@ -1,4 +1,4 @@
-package org.pramp.sales_path;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.pramp.sales_path;
 
 import java.util.ArrayList;
 import java.util.List;

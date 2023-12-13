@@ -1,4 +1,4 @@
-package org.algorithm;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.sort;
 
 public class QuickSort {
 

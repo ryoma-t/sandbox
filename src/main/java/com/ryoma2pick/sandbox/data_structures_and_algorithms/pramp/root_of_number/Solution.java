@@ -1,4 +1,4 @@
-package org.pramp.root_of_number;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.pramp.root_of_number;
 
 public class Solution {
 

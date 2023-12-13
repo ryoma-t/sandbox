@@ -1,8 +1,6 @@
-package org.leetcode.longest_substring_without_repeating_characters;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.longest_substring_without_repeating_characters;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class LongestUniqueChars {

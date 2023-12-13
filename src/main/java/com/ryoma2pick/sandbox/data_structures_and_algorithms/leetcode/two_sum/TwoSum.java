@@ -1,4 +1,4 @@
-package org.leetcode.two_sum;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.two_sum;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,8 +1,11 @@
-package org.leetcode.add_two_numbers;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.add_two_numbers;
 
+import com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.add_two_numbers.AddTwoNumbers;
+import com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.add_two_numbers.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class AddTwoNumbersTest {
 

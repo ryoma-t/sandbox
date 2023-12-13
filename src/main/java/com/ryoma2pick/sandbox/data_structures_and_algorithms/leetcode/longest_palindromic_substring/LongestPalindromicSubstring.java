@@ -1,4 +1,4 @@
-package org.leetcode.longest_palindromic_substring;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.longest_palindromic_substring;
 
 public class LongestPalindromicSubstring {
 

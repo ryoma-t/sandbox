@@ -1,4 +1,4 @@
-package org.leetcode.zigzag_conversion;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.zigzag_conversion;
 
 class ZigzagConversion {
 

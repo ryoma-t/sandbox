@@ -1,4 +1,4 @@
-package org.leetcode.add_two_numbers;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.add_two_numbers;
 
 public class ListNode {
 

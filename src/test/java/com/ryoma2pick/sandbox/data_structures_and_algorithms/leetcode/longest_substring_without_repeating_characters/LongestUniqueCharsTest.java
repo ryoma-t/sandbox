@@ -1,8 +1,8 @@
-package org.leetcode.longest_substring_without_repeating_characters;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.longest_substring_without_repeating_characters;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LongestUniqueCharsTest {
 

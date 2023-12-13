@@ -1,8 +1,8 @@
-package org.leetcode.two_sum;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.two_sum;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TwoSumTest {
 

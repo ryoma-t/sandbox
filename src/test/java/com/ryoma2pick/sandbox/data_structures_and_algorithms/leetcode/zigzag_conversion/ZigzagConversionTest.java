@@ -1,8 +1,8 @@
-package org.leetcode.zigzag_conversion;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.zigzag_conversion;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ZigzagConversionTest {
 

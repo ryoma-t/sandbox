@@ -1,10 +1,10 @@
-package org.pramp.array_of_array_products;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.pramp.array_of_array_products;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ArrayOfArrayProductsTest {
 

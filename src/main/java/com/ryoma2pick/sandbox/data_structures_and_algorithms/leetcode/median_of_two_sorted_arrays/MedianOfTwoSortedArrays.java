@@ -1,4 +1,4 @@
-package org.leetcode.median_of_two_sorted_arrays;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.median_of_two_sorted_arrays;
 
 public class MedianOfTwoSortedArrays {
 

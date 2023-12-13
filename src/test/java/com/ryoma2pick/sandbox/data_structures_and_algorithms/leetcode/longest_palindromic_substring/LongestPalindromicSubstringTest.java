@@ -1,8 +1,9 @@
-package org.leetcode.longest_palindromic_substring;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.longest_palindromic_substring;
 
+import com.ryoma2pick.sandbox.data_structures_and_algorithms.leetcode.longest_palindromic_substring.LongestPalindromicSubstring;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LongestPalindromicSubstringTest {
 

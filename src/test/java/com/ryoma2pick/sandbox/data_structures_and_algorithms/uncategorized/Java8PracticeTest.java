@@ -1,12 +1,9 @@
-package org.example;
+package com.ryoma2pick.sandbox.data_structures_and_algorithms.uncategorized;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Java8PracticeTest {
 
