@@ -1,21 +1,19 @@
-# Tech Interview
+## Tech Interview
 
-*I wrote it for the following purpose: to become more proficient at describing code in English.*
-
-## Notes (for Me)
-### Mindset
+### Notes (for Me)
+#### Mindset
 - Concentrate on the present moment, and then, move on to the next action.
 - To be confident and concise during interviews, all I can do is prepare.
 - The primary goal is to complete coding within the given time by cooperating with interviewers.
 - As long as I meet the requirements, its quality and test coverage make sense.
 
-### Time Table for Coding Interview
+#### Time Table for Coding Interview
 - Try to comprehend the question by asking the interview how the function is supposed to work in several circumstances.
 - Set a 3-minute timer, and start trying to come up with my solution. If, after 3 minutes, I cannot come up with any solution other than a brute force approach, ask the interviewer for some clues.
 - If a test fails, keep track of the stack by writing comments besides the code even though I cannot use any IDEs.
 
-## English Phrases
-### Colloquial Expressions
+### English Phrases
+#### Colloquial Expressions
 - what we're gonna do is `to do something`
 - the $n$-th step is `to do something`
 - we're going to `do something`
@@ -30,12 +28,12 @@
 - If I'm wrong, please correct me.
 - If an input array is empty, what is it supposed to return?
 
-### Introduction
+#### Introduction
 - Before we just dive into the details and start coding, it's important to know how the `Foo` algorithm works.
 - I'll go through exactly how the `Foo` algorithm works.
 
-### Example: Quicksort
-#### Algorithm
+#### Example: Quicksort
+##### Algorithm
 - The whole `quicksort` algorithm is composed of three steps.
     1. Choose one element in your array as a pivot.
     1. (`partitioning`) Move all elements which are less than the pivot to the left of it, all elements which are greater than the pivot to the right of it.
@@ -89,7 +87,7 @@
                  i,j
         ```
 
-#### Code
+##### Code
 - Let's get to coding `partition` method.
     - Create a test method to make sure that `partition` algorithm works properly. 
         - At the *setup* step, declare an input that we're going to partition, and an expected outcome. 
@@ -206,7 +204,7 @@
     }
     ```
 
-#### Time Complexity
+##### Time Complexity
 - I'll go thorough the time complexity.
     - In the best or expected cases, the height of the recursion tree will be $\log n$ (or $\log_2{n}$), because it implies how many steps it takes to decrease the number from $n$ to $1$ by halving.
     - Additionally, in any recursion level, we're going to iterate through almost $n$ elements in total.
@@ -217,14 +215,14 @@
     - In other words, in the worst case, an input array is already sorted, or all the elements are identical.
     - Consequently, in the worst case, the time complexity is $O(n^2)$.
 
-### Example: Depth First Search with Adjacency Matrix
-#### Algorithm
+#### Example: Depth First Search with Adjacency Matrix
+##### Algorithm
 - DFS algorithm is composed of tree steps:
     1. Choose a route.
     1. Keep on going until we reach a dead end or a previously visited node. 
     1. If we reach a dead end or a previously visited node, backtrack to the last node that has unvisited adjacent neighbors.
 
-#### Code
+##### Code
 - We're going to use a graph that utilizes an adjacency matrix.
 - Within `Graph` class, we're going to create `DepthFirstSearch` method.
     - We want it to take in one parameter, an index of where we would like to begin.
@@ -263,7 +261,7 @@
     }
     ```
 
-### Data Structures and Algorithm
+#### Data Structures and Algorithm
 - Hash Table
     - add the key-value pair with the key `key` and the value `value` to `hashTable`
     - lookup in our hash table if it contains the key `key`
@@ -277,7 +275,7 @@
 - Graph, Tree
     - `TBD`
 
-### Test
+#### Test
 - Phrases
     - a test passes (fails)
     - write a test scenario to cover the edge case
@@ -291,10 +289,10 @@
     - Let's go ahead and run (rerun) our test, and make sure it passes.
     - If we pass in `foo`, it should return `bar`.
 
-### Tips
+#### Tips
 - When declaring variable, I should choose carefully its data type in terms of how it's supposed to be used. If we store something which must be unique, we should choose a hash table because it takes only linear time complexity to lookup if it contains duplicates.
 
-### Appendix
+#### Appendix
 - Arithmetic
     - $x+y$, The sum of $x$ and $y$.
     - $xy$, The product of $x$ and $y$.
