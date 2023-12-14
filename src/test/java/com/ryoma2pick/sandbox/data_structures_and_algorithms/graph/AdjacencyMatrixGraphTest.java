@@ -65,18 +65,11 @@ class AdjacencyMatrixGraphTest {
     @Test
     void printGraph() throws OutOfSizeException {
         AdjacencyMatrixGraph graph = new AdjacencyMatrixGraph(3);
-        graph.addNode(new Node(1));
-        graph.addNode(new Node(2));
-        graph.addNode(new Node(3));
+        graph.addNode(new Node('A'));
+        graph.addNode(new Node('B'));
+        graph.addNode(new Node('C'));
         graph.addEdge(1, 2);
         graph.printGraph();
-    }
-
-    @Test
-    void dfsRecursion() throws OutOfSizeException {
-        graph();
-        graph.printGraph();
-        graph.dfsRecursion();
     }
 
     @Test
@@ -96,7 +89,7 @@ class AdjacencyMatrixGraphTest {
     @Test
     void topologicalSortKahn() throws OutOfSizeException {
         directedAcyclicGraph();
-        List<Node> sorted=dag.topologicalSortKahn();
+        List<Node> sorted = dag.topologicalSortKahn();
         System.out.println(sorted.toString());
     }
 

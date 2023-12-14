@@ -31,32 +31,6 @@ public class AdjacencyMatrixGraph {
         matrix[i][j] = 1;
     }
 
-    public void dfsRecursion() {
-        /*
-         1. choose a node
-         2. choose one adjacent node
-           2.1 if we've already visited the current node,
-               backtrack to the previous node
-           2.2 if the current node doesn't have any unvisited adjacent neighbors,
-               backtrack to the last node with unvisited adjacent neighbors
-           2.3 otherwise, repeat those operations
-         */
-        boolean[] visited = new boolean[size];
-        dfsRecursionHelper(0, visited);
-    }
-
-    void dfsRecursionHelper(int src, boolean[] visited) {
-        if (visited[src]) return;
-
-        visited[src] = true;
-        printNode(src);
-
-        for (int dst = 0; dst < size; dst++) {
-            if (matrix[src][dst] == 0) continue;
-            dfsRecursionHelper(dst, visited);
-        }
-    }
-
     public void dfsStack() {
         /*
         1. choose a node
