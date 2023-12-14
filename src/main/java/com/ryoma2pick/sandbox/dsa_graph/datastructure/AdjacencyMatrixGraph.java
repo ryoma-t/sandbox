@@ -33,37 +33,6 @@ public class AdjacencyMatrixGraph {
         matrix[i][j] = 1;
     }
 
-    public List<Node> topologicalSortDfs() {
-        /*
-        1. choose a node
-        2. choose an adjacent node
-        3. if the node doesn't have any unvisited adjacent neighbors,
-           add the node to a stack, and
-           backtrack to the last node with unvisited adjacent neighbors
-         */
-        boolean[] visited = new boolean[size];
-        Stack<Integer> stack = new Stack<>();
-        topologicalSortDfsHelper(0, visited, stack);
-
-        List<Node> output = new ArrayList<>();
-        while (!stack.isEmpty()) {
-            output.add(nodes.get(stack.pop()));
-        }
-        return output;
-
-    }
-
-    void topologicalSortDfsHelper(int src, boolean[] visited, Stack<Integer> stack) {
-        if (visited[src]) return;
-
-        visited[src] = true;
-        for (int dst = 0; dst < size; dst++) {
-            if (matrix[src][dst] == 0) continue;
-            topologicalSortDfsHelper(dst, visited, stack);
-        }
-        stack.push(src);
-    }
-
     public List<Node> topologicalSortKahn() {
         /*
         1. calculate the indegree
