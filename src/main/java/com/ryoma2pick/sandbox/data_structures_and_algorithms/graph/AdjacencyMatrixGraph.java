@@ -31,36 +31,6 @@ public class AdjacencyMatrixGraph {
         matrix[i][j] = 1;
     }
 
-    public void dfsStack() {
-        /*
-        1. choose a node
-        2. choose an adjacent node
-          2.1 if we've already visited the current node,
-              backtrack to the previous node
-          2.2. if the current node doesn't have any unvisited adjacent neighbors,
-               backtrack to the last node with unvisited adjacent neighbors
-          2.3 otherwise, repeat those operations
-         */
-        boolean[] visited = new boolean[size];
-        Stack<Integer> stack = new Stack<>();
-
-        int src = 0;
-        stack.push(src);
-
-        while (!stack.isEmpty()) {
-            src = stack.pop();
-            if (visited[src]) continue;
-
-            visited[src] = true;
-            printNode(src);
-
-            for (int dst = 0; dst < size; dst++) {
-                if (matrix[src][dst] == 0) continue;
-                stack.push(dst);
-            }
-        }
-    }
-
     public List<Node> topologicalSortDfs() {
         /*
         1. choose a node
