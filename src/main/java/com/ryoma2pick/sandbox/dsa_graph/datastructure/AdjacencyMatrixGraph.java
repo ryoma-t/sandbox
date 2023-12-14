@@ -33,46 +33,6 @@ public class AdjacencyMatrixGraph {
         matrix[i][j] = 1;
     }
 
-    public List<Node> topologicalSortKahn() {
-        /*
-        1. calculate the indegree
-        2. add zero-indegree nodes to a queue
-        3. dequeue a node,
-           append it to the list that we're going to return,
-           decrement the neighbors' indegree,
-           and add zero-indegree nodes to the queue
-        4. repeat those operations as long as the queue is not empty
-         */
-        Map<Integer, Integer> indegrees = new HashMap<>();
-        for (int dst = 0; dst < size; dst++) {
-            int indegree = 0;
-            for (int src = 0; src < size; src++) {
-                indegree += matrix[src][dst];
-            }
-            indegrees.put(dst, indegree);
-        }
-
-        Queue<Integer> queue = new LinkedList<>();
-        for (Integer key : indegrees.keySet()) {
-            if (indegrees.get(key) == 0) queue.add(key);
-        }
-
-        List<Node> output = new ArrayList<>();
-        while (!queue.isEmpty()) {
-            int src = queue.poll();
-            output.add(nodes.get(src));
-
-            for (int dst = 0; dst < size; dst++) {
-                if (matrix[src][dst] == 1) {
-                    indegrees.put(dst, indegrees.get(dst) - 1);
-                    if (indegrees.get(dst) == 0) queue.add(dst);
-                }
-            }
-        }
-
-        return output;
-    }
-
     public void printGraph() {
         StringBuilder header = new StringBuilder();
         header.append("  ");
@@ -91,10 +51,6 @@ public class AdjacencyMatrixGraph {
             }
             System.out.println(sb.toString());
         }
-    }
-
-    private void printNode(int src) {
-        System.out.println(nodes.get(src) + " has been visited");
     }
 
 }

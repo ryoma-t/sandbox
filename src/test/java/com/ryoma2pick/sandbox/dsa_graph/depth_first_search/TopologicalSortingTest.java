@@ -13,9 +13,16 @@ class TopologicalSortingTest {
     private AdjacencyMatrixGraph dag;
 
     @Test
-    void name() {
+    void sortDfs() {
         dag.printGraph();
         List<Node> sorted = TopologicalSorting.sortDfs(dag);
+        System.out.println(sorted.toString());
+    }
+
+    @Test
+    void sortKahn() {
+        dag.printGraph();
+        List<Node> sorted = TopologicalSorting.sortKahn(dag);
         System.out.println(sorted.toString());
     }
 
