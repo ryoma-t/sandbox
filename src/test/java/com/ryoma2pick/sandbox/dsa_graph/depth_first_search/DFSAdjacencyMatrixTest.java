@@ -1,5 +1,9 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.depth_first_search;
 
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.AdjacencyMatrixGraph;
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.Node;
+import com.ryoma2pick.sandbox.dsa_graph.depth_first_search.DFSAdjacencyMatrix;
+import com.ryoma2pick.sandbox.dsa_graph.exception.OutOfSizeException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

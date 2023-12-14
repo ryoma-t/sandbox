@@ -1,4 +1,6 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.depth_first_search;
+
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.LinkedNode;
 
 import java.util.Stack;
 

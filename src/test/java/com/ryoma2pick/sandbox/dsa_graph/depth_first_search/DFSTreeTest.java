@@ -1,5 +1,7 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.depth_first_search;
 
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.LinkedNode;
+import com.ryoma2pick.sandbox.dsa_graph.depth_first_search.DFSTree;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

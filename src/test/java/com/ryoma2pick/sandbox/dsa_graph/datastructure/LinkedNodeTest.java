@@ -1,5 +1,6 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.datastructure;
 
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.LinkedNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

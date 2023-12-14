@@ -1,5 +1,6 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.datastructure;
 
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.Node;
 import lombok.Data;
 
 import java.util.ArrayList;
