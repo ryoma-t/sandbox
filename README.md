@@ -226,7 +226,7 @@
 
 ##### Code
 - We're going to use a graph that utilizes an adjacency matrix.
-- Within `Graph` class, we're going to create `DepthFirstSearch` method.
+- We're going to create `DepthFirstSearch` method.
     - We want it to take in one parameter, root node.
     - To keep track of the nodes that we've already visited, what we're gonna do is create an array of booleans.
     - We will call a helper function. Let's call it `dFSHelper`, and we want it to take in the parameters `src` and `visited`.
