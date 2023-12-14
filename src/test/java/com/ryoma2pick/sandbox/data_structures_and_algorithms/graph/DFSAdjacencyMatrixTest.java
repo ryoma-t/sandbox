@@ -16,7 +16,7 @@ class DFSAdjacencyMatrixTest {
     @Test
     void dfsStack() {
         graph.printGraph();
-        DFSAdjacencyMatrix.dfsStackHelper(graph);
+        DFSAdjacencyMatrix.dfsStack(graph);
     }
 
     @BeforeEach

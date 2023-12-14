@@ -53,7 +53,7 @@ public class DFSAdjacencyMatrix {
     // we're going to use a graph that utilizes adjacency matrix
     // we're going to create a method
     // let's call it dfsStack
-    public static void dfsStackHelper(AdjacencyMatrixGraph graph) {
+    public static void dfsStack(AdjacencyMatrixGraph graph) {
         // to keep track of the nodes that we've already visited
         // create an array of booleans
         // let's call it visited
