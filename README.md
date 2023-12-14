@@ -218,16 +218,18 @@
 #### Example: Depth First Search with Adjacency Matrix
 ##### Algorithm
 - DFS algorithm is composed of tree steps:
-    1. Choose a route.
-    1. Keep on going until we reach a dead end or a previously visited node. 
-    1. If we reach a dead end or a previously visited node, backtrack to the last node that has unvisited adjacent neighbors.
+    - choose a node
+    - choose an adjacent neighbor
+        - if we've already visited the current node, backtrack to the previous node and choose another unvisited node
+        - if the current node doesn't have any unvisited adjacent neighbor, backtrack to the last node with unvisited adjacent neighbor
+        - otherwise, repeat those operations
 
 ##### Code
 - We're going to use a graph that utilizes an adjacency matrix.
 - Within `Graph` class, we're going to create `DepthFirstSearch` method.
-    - We want it to take in one parameter, an index of where we would like to begin.
-    - To keep track of the nodes that we've already visited, what we're gonna do is create an array of booleans and the size will be equal to the length of the matrix.
-    - Lastly, we will call a helper function. Let's call it `dFSHelper`, and we want it to take in the parameters `src` and `visited`.
+    - We want it to take in one parameter, root node.
+    - To keep track of the nodes that we've already visited, what we're gonna do is create an array of booleans.
+    - We will call a helper function. Let's call it `dFSHelper`, and we want it to take in the parameters `src` and `visited`.
     ```
     List<Node> nodes;
     int[][] matrix;
