@@ -347,12 +347,12 @@ Graph traversal is an algorighm to **visit every node** of a graph.
 ### Concrete Traversal Implementations
 | DFS or BFS | Graph Implementation | Data Structure | Code Sample | Commnet |
 |------------|------------|------------|------------|------------|
-| DFS | Adjacency Matrix | Recursion | [AdjacencyMatrixGraph.dfsRecursion](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/data_structure/AdjacencyMatrixGraph.java#L36) |  |
-| DFS | Adjacency Matrix | Stack | [AdjacencyMatrixGraph.dfsStack](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/data_structure/AdjacencyMatrixGraph.java#L62)  |  |
+| DFS | Adjacency Matrix | Recursion | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/data_structures_and_algorithms/graph/DFSAdjacencyMatrix.java#L20) |  |
+| DFS | Adjacency Matrix | Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/data_structures_and_algorithms/graph/DFSAdjacencyMatrix.java#L56)  |  |
 | DFS | Adjacency List | Recursion | `TBD` |  |
 | DFS | Adjacency List | Stack | `TBD` |  |
-| DFS | Tree Node | Recursion | [TreeDFS.dfsRecursion](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/algorithm/TreeDFS.java#L7) | This method can be used only for connected and acyclic graphs i.e. trees. |
-| DFS | Tree Node | Stack | [TreeDFS.dfsStack](https://github.com/ryoma-t/dsa-graph/blob/main/src/main/java/org/algorithm/TreeDFS.java#L26) | This method can be used only for connected and acyclic graphs i.e. trees. |
+| DFS | Tree Node | Recursion | [implementation]() | This method can be used only for connected and acyclic graphs i.e. trees. |
+| DFS | Tree Node | Stack | [implementation]() | This method can be used only for connected and acyclic graphs i.e. trees. |
 | BFS | Adjacency Matrix | Queue | `TBD` |  |
 | BFS | Adjacency List | Queue | `TBD` |  |
 | BFS | Tree Node | Queue | `TBD` | This method can be used only for connected and acyclic graphs i.e. trees. |
