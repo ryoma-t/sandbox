@@ -1,26 +1,23 @@
 package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
 
-import com.ryoma2pick.sandbox.data_structures_and_algorithms.graph.TreeDFS;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class TreeDFSTest {
+class DFSTreeTest {
 
     private LinkedNode<Character> root;
 
     @Test
     void dfsRecursion() {
-        setup();
-        TreeDFS dfs=new TreeDFS();
-        dfs.dfsRecursion(root);
+        DFSTree.dfsRecursion(root);
     }
 
     @Test
     void dfsStack() {
-        setup();
-        TreeDFS dfs=new TreeDFS();
-        dfs.dfsStack(root);
+        DFSTree.dfsStack(root);
     }
 
+    @BeforeEach
     private void setup() {
     /*
          A
