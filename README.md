@@ -241,7 +241,7 @@
     ```
 
 - In this implementation, we're going to use recursion.
-    - When we invoke this helper function, we're going to check if the current node is visited or not.
+    - We're going to check if the current node is visited or not.
     - If we've already visited this node, we're going to return.
     ```
     void dFSHelper(int src, boolean[] visited){
