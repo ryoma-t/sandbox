@@ -329,6 +329,7 @@
     - infinite loop
     - vertex, vertices (plural)
 
+---
 ## Graph
 ### What is Graph Traversal
 Graph traversal is an algorighm to **visit every node** of a graph.
@@ -351,14 +352,13 @@ Graph traversal is an algorighm to **visit every node** of a graph.
 | DFS | Adjacency Matrix | Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/data_structures_and_algorithms/graph/DFSAdjacencyMatrix.java#L56)  |  |
 | DFS | Adjacency List | Recursion | `TBD` |  |
 | DFS | Adjacency List | Stack | `TBD` |  |
-| DFS | Tree Node | Recursion | [implementation]() | This method can be used only for connected and acyclic graphs i.e. trees. |
-| DFS | Tree Node | Stack | [implementation]() | This method can be used only for connected and acyclic graphs i.e. trees. |
+| DFS | Tree Node | Recursion | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/data_structures_and_algorithms/graph/DFSTree.java#L7) | This method can be used only for connected and acyclic graphs i.e. trees. |
+| DFS | Tree Node | Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/data_structures_and_algorithms/graph/DFSTree.java#L19) | This method can be used only for connected and acyclic graphs i.e. trees. |
 | BFS | Adjacency Matrix | Queue | `TBD` |  |
 | BFS | Adjacency List | Queue | `TBD` |  |
 | BFS | Tree Node | Queue | `TBD` | This method can be used only for connected and acyclic graphs i.e. trees. |
 
-
-
+---
 ## Reference
 - The videos from which I've learned English phrases:
     - https://www.youtube.com/watch?v=h8eyY7dIiN4&t=992s
