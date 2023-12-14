@@ -73,30 +73,4 @@ class AdjacencyMatrixGraphTest {
         graph.printGraph();
     }
 
-    @Test
-    void topologicalSortKahn() throws OutOfSizeException {
-        directedAcyclicGraph();
-        List<Node> sorted = dag.topologicalSortKahn();
-        System.out.println(sorted.toString());
-    }
-
-    private void directedAcyclicGraph() throws OutOfSizeException {
-        dag = new AdjacencyMatrixGraph(7);
-        dag.addNode(new Node<Character>('A'));
-        dag.addNode(new Node<Character>('B'));
-        dag.addNode(new Node<Character>('C'));
-        dag.addNode(new Node<Character>('D'));
-        dag.addNode(new Node<Character>('E'));
-        dag.addNode(new Node<Character>('F'));
-        dag.addNode(new Node<Character>('G'));
-        dag.addEdge(0, 1);
-        dag.addEdge(0, 2);
-        dag.addEdge(1, 3);
-        dag.addEdge(1, 4);
-        dag.addEdge(2, 5);
-        dag.addEdge(4, 5);
-        dag.addEdge(4, 6);
-        dag.addEdge(6, 3);
-    }
-
 }
