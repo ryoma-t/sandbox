@@ -1,4 +1,4 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.datastructure;
 
 import lombok.Getter;
 import lombok.Setter;

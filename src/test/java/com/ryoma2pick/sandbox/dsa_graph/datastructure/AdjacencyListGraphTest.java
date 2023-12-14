@@ -1,5 +1,7 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.datastructure;
 
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.AdjacencyListGraph;
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.Node;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AdjacencyListGraphTest {
 
     @Test
-    void addNode() throws DuplicateException {
+    void addNode() {
         AdjacencyListGraph graph = new AdjacencyListGraph();
         assertEquals(0, graph.getGraph().size());
         graph.addNode('A');

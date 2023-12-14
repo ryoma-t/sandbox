@@ -1,5 +1,7 @@
-package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
+package com.ryoma2pick.sandbox.dsa_graph.datastructure;
 
+import com.ryoma2pick.sandbox.dsa_graph.datastructure.Node;
+import com.ryoma2pick.sandbox.dsa_graph.exception.OutOfSizeException;
 import lombok.Data;
 
 import java.util.*;
@@ -102,7 +104,7 @@ public class AdjacencyMatrixGraph {
         return output;
     }
 
-    void printGraph() {
+    public void printGraph() {
         StringBuilder header = new StringBuilder();
         header.append("  ");
         for (int i = 0; i < nodes.size(); i++) {
