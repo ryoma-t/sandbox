@@ -73,13 +73,6 @@ class AdjacencyMatrixGraphTest {
     }
 
     @Test
-    void dfsStack() throws OutOfSizeException {
-        graph();
-        graph.printGraph();
-        graph.dfsStack();
-    }
-
-    @Test
     void topologicalSortDfs() throws OutOfSizeException {
         directedAcyclicGraph();
         List<Node> sorted = dag.topologicalSortDfs();

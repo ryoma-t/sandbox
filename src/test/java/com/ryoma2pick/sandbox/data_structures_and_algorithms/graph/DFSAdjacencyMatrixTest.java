@@ -13,6 +13,12 @@ class DFSAdjacencyMatrixTest {
         DFSAdjacencyMatrix.dfsRecursion(graph);
     }
 
+    @Test
+    void dfsStack() {
+        graph.printGraph();
+        DFSAdjacencyMatrix.dfsStackHelper(graph);
+    }
+
     @BeforeEach
     private void graph() throws OutOfSizeException {
         graph = new AdjacencyMatrixGraph(5);

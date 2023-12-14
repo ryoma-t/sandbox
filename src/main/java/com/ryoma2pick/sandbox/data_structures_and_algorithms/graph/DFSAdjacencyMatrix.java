@@ -1,5 +1,7 @@
 package com.ryoma2pick.sandbox.data_structures_and_algorithms.graph;
 
+import java.util.Stack;
+
 /*
 1. choose a node
 2. choose an adjacent neighbor
@@ -45,6 +47,41 @@ public class DFSAdjacencyMatrix {
             if (matrix[src][dest] == 1) continue;
             // then, we will call dfsRecursionHelper recursively
             dfsRecursionHelper(dest, matrix, visited);
+        }
+    }
+
+    // we're going to use a graph that utilizes adjacency matrix
+    // we're going to create a method
+    // let's call it dfsStack
+    public static void dfsStackHelper(AdjacencyMatrixGraph graph) {
+        // to keep track of the nodes that we've already visited
+        // create an array of booleans
+        // let's call it visited
+        boolean[] visited = new boolean[graph.getSize()];
+        // specify where we're going to begin
+        int src = 0;
+
+        // we will call a helper function
+        // let's call it dfsStackHelper
+        // we want it take in the parameters like this
+        dfsStackHelper(src, graph.getMatrix(), visited);
+        // let's get to implementing
+    }
+
+    private static void dfsStackHelper(int src, int[][] matrix, boolean[] visited) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(src);
+        while (!stack.isEmpty()) {
+            int node = stack.pop();
+            if (visited[node]) continue;
+
+            visited[node] = true;
+            System.out.println(node);
+
+            for (int dest = 0; dest < matrix[node].length; dest++) {
+                if (matrix[node][dest] == 0) continue;
+                stack.push(dest);
+            }
         }
     }
 
