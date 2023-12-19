@@ -10,11 +10,11 @@ import java.util.concurrent.locks.ReentrantLock;
 @Data
 public class LoadBalancer {
 
+    private Map<Integer, String> servers;
+    private static final int MAX_SIZE = 10;
+    private int roundRobinCount = 0;
     private final Lock serverSizeLock = new ReentrantLock();
     private final Lock roundRobinCountLock = new ReentrantLock();
-    private static final int MAX_SIZE = 10;
-    private Map<Integer, String> servers;
-    private int roundRobinCount = 0;
 
     public LoadBalancer() {
         servers = new HashMap<>();
