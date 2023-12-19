@@ -132,7 +132,7 @@ class LoadBalancerTest {
     }
 
     @Test
-    void since_safe_it_could_return_servers_one_after_another() throws DuplicateException, ExceedsMaxException, InterruptedException {
+    void since_safe_it_returns_servers_one_after_another() throws DuplicateException, ExceedsMaxException, InterruptedException {
         LoadBalancer lb = new LoadBalancer();
         String server1 = "server1";
         String server2 = "server2";
