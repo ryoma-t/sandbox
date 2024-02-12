@@ -349,9 +349,9 @@ Graph traversal is an algorighm to **visit every node** of a graph.
 | DFS or BFS | Graph Implementation | Implementation | Code Sample | Commnet |
 |------------|------------|------------|------------|------------|
 | DFS | Adjacency Matrix | Recursion | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyMatrix.java#L22) |  |
-| DFS | Adjacency Matrix | Iteration with Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyMatrix.java#L58) |  |
+| DFS | Adjacency Matrix | Iteration with Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyMatrix.java#L59) |  |
 | DFS | Adjacency List | Recursion | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyList.java#L19) |  |
-| DFS | Adjacency List | Iteration with Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyList.java#L34) |  |
+| DFS | Adjacency List | Iteration with Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyList.java#L35) |  |
 | DFS | Tree Node | Recursion | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSTree.java#L9) | This method can be used only for connected and acyclic graphs i.e. trees. |
 | DFS | Tree Node | Iteration with Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSTree.java#L21) | This method can be used only for connected and acyclic graphs i.e. trees. |
 | BFS | Adjacency Matrix | Iteration with Queue | `TBD` |  |
