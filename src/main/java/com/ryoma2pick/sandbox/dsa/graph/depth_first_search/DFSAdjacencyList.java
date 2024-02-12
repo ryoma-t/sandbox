@@ -22,11 +22,12 @@ public class DFSAdjacencyList {
     }
 
     private static void dfsRecursionHelper(Node src, AdjacencyListGraph graph, Set<Node> visited) {
+        if (visited.contains(src)) return;
+
         visited.add(src);
         System.out.println(src);
 
         for (Node dest : graph.getAdjList().get(src)) {
-            if (visited.contains(dest)) continue;
             dfsRecursionHelper(dest, graph, visited);
         }
     }
@@ -40,11 +41,12 @@ public class DFSAdjacencyList {
 
         while (!stack.isEmpty()) {
             src = stack.pop();
+            if (visited.contains(src)) continue;
+
             visited.add(src);
             System.out.println(src);
 
             for (Node dest : graph.getAdjList().get(src)) {
-                if (visited.contains(dest)) continue;
                 stack.push(dest);
             }
         }
