@@ -40,8 +40,6 @@ public class DFSAdjacencyList {
 
         while (!stack.isEmpty()) {
             src = stack.pop();
-            if (visited.contains(src)) continue;
-
             visited.add(src);
             System.out.println(src);
 
