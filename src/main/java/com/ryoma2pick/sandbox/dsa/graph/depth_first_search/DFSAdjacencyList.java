@@ -7,28 +7,35 @@ import java.util.*;
 
 public class DFSAdjacencyList {
 
-    public static <T> void dfsRecursion(T root, AdjacencyListGraph graph) {
-        Set<T> visited = new HashSet<>();
+    /*
+    1. visit root
+    2. choose an adjacent node
+      2.1. if we've already visited it,
+           backtrack to the previous node and choose another adjacent node
+      2.2. if there are no unvisited adjacent nodes,
+           backtrack to the last node with unvisited
+      2.3. otherwise, visit it, and repeat those operations recursively
+     */
+    public static void dfsRecursion(Node root, AdjacencyListGraph graph) {
+        Set<Node> visited = new HashSet<>();
         dfsRecursionHelper(root, graph, visited);
     }
 
-    private static <T> void dfsRecursionHelper(T src, AdjacencyListGraph graph, Set<T> visited) {
-        if (visited.contains(src)) return;
-
+    private static void dfsRecursionHelper(Node src, AdjacencyListGraph graph, Set<Node> visited) {
         visited.add(src);
         System.out.println(src);
 
-        for (Node dest : graph.getGraph().get(new Node(src))) {
+        for (Node dest : graph.getAdjList().get(src)) {
             if (visited.contains(dest)) continue;
-            dfsRecursionHelper((T) dest.getValue(), graph, visited);
+            dfsRecursionHelper(dest, graph, visited);
         }
     }
 
-    public static <T> void dfsStack(T root, AdjacencyListGraph graph) {
-        Set<T> visited = new HashSet<>();
-        Stack<T> stack = new Stack<>();
+    public static void dfsStack(Node root, AdjacencyListGraph graph) {
+        Set<Node> visited = new HashSet<>();
+        Stack<Node> stack = new Stack<>();
 
-        T src = root;
+        Node src = root;
         stack.push(src);
 
         while (!stack.isEmpty()) {
@@ -38,9 +45,9 @@ public class DFSAdjacencyList {
             visited.add(src);
             System.out.println(src);
 
-            for (Node dest : graph.getGraph().get(new Node(src))) {
+            for (Node dest : graph.getAdjList().get(src)) {
                 if (visited.contains(dest)) continue;
-                stack.push((T) dest.getValue());
+                stack.push(dest);
             }
         }
 
