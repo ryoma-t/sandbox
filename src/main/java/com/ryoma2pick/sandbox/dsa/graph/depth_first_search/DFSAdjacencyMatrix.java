@@ -41,12 +41,13 @@ public class DFSAdjacencyMatrix {
 
         // otherwise, we will mark this node as visited
         visited[src] = true;
+        System.out.println(src);
         // next, we need to find any adjacent neighbors
         // since we're using an adjacency matrix, we need to iterate over its column
         for (int dest = 0; dest < matrix[src].length; dest++) {
             // in each iteration, check if an element is 1,
             // which means that's an adjacent neighbor
-            if (matrix[src][dest] == 1) continue;
+            if (matrix[src][dest] == 0) continue;
             // then, we will call dfsRecursionHelper recursively
             dfsRecursionHelper(dest, matrix, visited);
         }
