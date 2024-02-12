@@ -336,11 +336,11 @@ Graph traversal is an algorighm to **visit every node** of a graph.
 
 ### Abstract Traversal Algorithm
 #### Depth First Search
-- Visit root node.
-- Choose an adjacent node.
-    - If we've already visited it, backtrack to the previous node and choose another adjacent node.
-    - If there're no any unvisited adjacent node, backtrack to the last node with unvisited nodes.
-    - Otherwise, visit it and repeat those operations recursivly.
+- Choose a node.
+- Choose its adjacent node.
+    - If we've already visited it, backtrack to the previous node and choose another adjacent neighbor.
+    - If it doesn't have any unvisited adjacent neighbor, backtrack to the last node with unvisited nodes.
+    - Otherwise, repeat those operations.
  
 #### Breadth First Search
 `TBD`
