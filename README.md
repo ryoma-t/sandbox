@@ -11,6 +11,8 @@
 ### Lessons
 - If, after 3 minutes, I cannot come up with any solution other than a brute force approach, ask an interviewer for some clues.
 - If a test fails, keep track of the stack by writing comments besides the code even though I cannot use any IDEs.
+- When declaring variable, I should choose carefully its data type in terms of how it's supposed to be used. If we store something which must be unique, we should choose a hash table because it takes only linear time complexity to lookup if it contains duplicates.
+
 
 ### Interview Template
 1. Determine
@@ -249,61 +251,9 @@
     }
     ```
 
---- 
-### English Phrases
-#### Colloquial Expressions
-- what we're gonna do is `to do something`
-- the $n$-th step is `to do something`
-- we're going to `do something`
-- we need to `do something`
-- Let's get to `something` (or `doing something`)
+### Vocabulary
+#### Tech and Mathematical Concepts
 
-- Alright, now ...
-- Sorry, that's a mistake. It should be ...
-
-- Let me think for a moment.
-- Let me confirm my understandings.
-- If I'm wrong, please correct me.
-- If an input array is empty, what is it supposed to return?
-
-#### Introduction
-- Before we just dive into the details and start coding, it's important to know how the `Foo` algorithm works.
-- I'll go through exactly how the `Foo` algorithm works.
-
-
-
-#### Data Structures and Algorithm
-- Hash Table
-    - add the key-value pair with the key `key` and the value `value` to `hashTable`
-    - lookup in our hash table if it contains the key `key`
-
-- Loop
-    - iterate through `array` until ...
-    - iterate through `array` as long as ...
-    - in each iteration, ...
-    - move on to the next iteration
-
-- Graph, Tree
-    - `TBD`
-
-#### Test
-- Phrases
-    - a test passes (fails)
-    - write a test scenario to cover the edge case
-    - debug to identify and fix defects
-    - want it to take `x` and `y`
-    - want it to return `z`
-
-- Sentences
-    - We're verifying that `foo` should return `bar`. So, let's call our test method `fooShouldReturnBar`.
-    - Because the code isn't doing the right thing, our test should fail.
-    - Let's go ahead and run (rerun) our test, and make sure it passes.
-    - If we pass in `foo`, it should return `bar`.
-
-#### Tips
-- When declaring variable, I should choose carefully its data type in terms of how it's supposed to be used. If we store something which must be unique, we should choose a hash table because it takes only linear time complexity to lookup if it contains duplicates.
-
-#### Appendix
 - Arithmetic
     - $x+y$, The sum of $x$ and $y$.
     - $xy$, The product of $x$ and $y$.
@@ -337,6 +287,47 @@
     - brute force
     - infinite loop
     - vertex, vertices (plural)
+
+#### Data Structures and Algorithms
+- Hash Table
+    - add the key-value pair with the key `key` and the value `value` to `hashTable`
+    - lookup in our hash table if it contains the key `key`
+- Loop
+    - iterate through `array` until ...
+    - iterate through `array` as long as ...
+    - in each iteration, ...
+    - move on to the next iteration
+    - 
+#### Testing
+- Phrases
+    - a test passes (fails)
+    - write a test scenario to cover the edge case
+    - debug to identify and fix defects
+    - want it to take `x` and `y`
+    - want it to return `z`
+- Sentences
+    - We're verifying that `foo` should return `bar`. So, let's call our test method `fooShouldReturnBar`.
+    - Because the code isn't doing the right thing, our test should fail.
+    - Let's go ahead and run (rerun) our test, and make sure it passes.
+    - If we pass in `foo`, it should return `bar`.
+
+#### Colloquial Expressions
+- what we're gonna do is `to do something`
+- the $n$-th step is `to do something`
+- we're going to `do something`
+- we need to `do something`
+- Let's get to `something` (or `doing something`)
+
+- Alright, now ...
+- Sorry, that's a mistake. It should be ...
+
+- Let me think for a moment.
+- Let me confirm my understandings.
+- If I'm wrong, please correct me.
+- If an input array is empty, what is it supposed to return?
+
+- Before we just dive into the details and start coding, it's important to know how the `Foo` algorithm works.
+- I'll go through exactly how the `Foo` algorithm works.
 
 ---
 ## 2. Supplementary Tech Contents
