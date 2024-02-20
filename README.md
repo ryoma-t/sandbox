@@ -1,4 +1,6 @@
-## Tech Interview
+# sandbox
+
+## English for Tech Interviews
 
 ### Notes (for Me)
 #### Mindset
@@ -330,23 +332,19 @@
     - vertex, vertices (plural)
 
 ---
-## Graph
-### What is Graph Traversal
+## Tech Matters
+### Graph Traversal
 Graph traversal is an algorighm to **visit every node** of a graph.
+Depth First Search, one of traversal algorithms follows the following steps:
 
-### Abstract Traversal Algorithm
-#### Depth First Search
-- Choose a node.
-- Choose its adjacent node.
-    - If we've already visited it, backtrack to the previous node and choose another adjacent neighbor.
-    - If it doesn't have any unvisited adjacent neighbor, backtrack to the last node with unvisited nodes.
-    - Otherwise, repeat those operations.
- 
-#### Breadth First Search
-`TBD`
+1. Choose a node.
+1. Choose its adjacent node.
+    1. If we've already visited it, backtrack to the previous node and choose another adjacent neighbor.
+    1. If it doesn't have any unvisited adjacent neighbor, backtrack to the last node with unvisited nodes.
+    1. Otherwise, repeat those operations.
 
-### Concrete Traversal Implementations
-| DFS or BFS | Graph Implementation | Implementation | Code Sample | Commnet |
+Concrete implementations vary with respect to its graph representation and data structures we're going to adopt.
+| DFS or BFS | Graph Representation | Data Structure | Code Sample | Commnet |
 |------------|------------|------------|------------|------------|
 | DFS | Adjacency Matrix | Recursion | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyMatrix.java#L22) |  |
 | DFS | Adjacency Matrix | Iteration with Stack | [implementation](https://github.com/ryoma-t/sandbox/blob/main/src/main/java/com/ryoma2pick/sandbox/dsa/graph/depth_first_search/DFSAdjacencyMatrix.java#L59) |  |
@@ -364,7 +362,3 @@ Graph traversal is an algorighm to **visit every node** of a graph.
     - https://www.youtube.com/watch?v=h8eyY7dIiN4&t=992s
     - https://www.youtube.com/watch?v=vZm0lHciFsQ&t=8s
     - https://www.youtube.com/watch?v=by93qH4ACxo
--   Arithmetic phrases:
-    - https://www.onemathematicalcat.org/algebra_book/online_problems/translate_math_phrases.htm
-    - https://courses.lumenlearning.com/beginalgebra/chapter/introduction-to-exponents/
-    - https://practicaltypography.com/parentheses-brackets-and-braces.html
