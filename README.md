@@ -297,7 +297,7 @@
     - iterate through `array` as long as ...
     - in each iteration, ...
     - move on to the next iteration
-    - 
+    
 #### Testing
 - Phrases
     - a test passes (fails)
