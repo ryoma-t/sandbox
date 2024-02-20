@@ -22,29 +22,8 @@
 1. Implement
     - _Let's get to implementation._
 
---- 
-### English Phrases
-#### Colloquial Expressions
-- what we're gonna do is `to do something`
-- the $n$-th step is `to do something`
-- we're going to `do something`
-- we need to `do something`
-- Let's get to `something` (or `doing something`)
-
-- Alright, now ...
-- Sorry, that's a mistake. It should be ...
-
-- Let me think for a moment.
-- Let me confirm my understandings.
-- If I'm wrong, please correct me.
-- If an input array is empty, what is it supposed to return?
-
-#### Introduction
-- Before we just dive into the details and start coding, it's important to know how the `Foo` algorithm works.
-- I'll go through exactly how the `Foo` algorithm works.
-
-#### Example: Quicksort
-##### Algorithm
+### Interview Demo
+#### Case 1: Quick Sort
 - The whole `quicksort` algorithm is composed of three steps.
     1. Choose one element in your array as a pivot.
     1. (`partitioning`) Move all elements which are less than the pivot to the left of it, all elements which are greater than the pivot to the right of it.
@@ -98,7 +77,6 @@
                  i,j
         ```
 
-##### Code
 - Let's get to coding `partition` method.
     - Create a test method to make sure that `partition` algorithm works properly. 
         - At the *setup* step, declare an input that we're going to partition, and an expected outcome. 
@@ -215,7 +193,6 @@
     }
     ```
 
-##### Time Complexity
 - I'll go thorough the time complexity.
     - In the best or expected cases, the height of the recursion tree will be $\log n$ (or $\log_2{n}$), because it implies how many steps it takes to decrease the number from $n$ to $1$ by halving.
     - Additionally, in any recursion level, we're going to iterate through almost $n$ elements in total.
@@ -226,8 +203,7 @@
     - In other words, in the worst case, an input array is already sorted, or all the elements are identical.
     - Consequently, in the worst case, the time complexity is $O(n^2)$.
 
-#### Example: Depth First Search with Adjacency Matrix
-##### Algorithm
+#### Case 2: Depth First Search with Adjacency Matrix
 - DFS algorithm is composed of tree steps:
     - choose a node
     - choose an adjacent neighbor
@@ -235,7 +211,6 @@
         - if the current node doesn't have any unvisited adjacent neighbor, backtrack to the last node with unvisited adjacent neighbor
         - otherwise, repeat those operations
 
-##### Code
 - We're going to use a graph that utilizes an adjacency matrix.
 - We're going to create `DepthFirstSearch` method.
     - We want it to take in one parameter, root node.
@@ -273,6 +248,29 @@
         }
     }
     ```
+
+--- 
+### English Phrases
+#### Colloquial Expressions
+- what we're gonna do is `to do something`
+- the $n$-th step is `to do something`
+- we're going to `do something`
+- we need to `do something`
+- Let's get to `something` (or `doing something`)
+
+- Alright, now ...
+- Sorry, that's a mistake. It should be ...
+
+- Let me think for a moment.
+- Let me confirm my understandings.
+- If I'm wrong, please correct me.
+- If an input array is empty, what is it supposed to return?
+
+#### Introduction
+- Before we just dive into the details and start coding, it's important to know how the `Foo` algorithm works.
+- I'll go through exactly how the `Foo` algorithm works.
+
+
 
 #### Data Structures and Algorithm
 - Hash Table
