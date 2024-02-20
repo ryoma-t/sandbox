@@ -1,19 +1,28 @@
 # sandbox
 
-## English for Tech Interviews
+## 1. English for Tech Interviews
 
-### Notes (for Me)
-#### Mindset
+### Mindset
 - Concentrate on the present moment, and then, move on to the next action.
 - To be confident and concise during interviews, all I can do is prepare.
 - The primary goal is to complete coding within the given time by cooperating with interviewers.
 - As long as I meet the requirements, its quality and test coverage make sense.
 
-#### Time Table for Coding Interview
-- Try to comprehend the question by asking the interview how the function is supposed to work in several circumstances.
-- Set a 3-minute timer, and start trying to come up with my solution. If, after 3 minutes, I cannot come up with any solution other than a brute force approach, ask the interviewer for some clues.
+### Lessons
+- If, after 3 minutes, I cannot come up with any solution other than a brute force approach, ask an interviewer for some clues.
 - If a test fails, keep track of the stack by writing comments besides the code even though I cannot use any IDEs.
 
+### Interview Template
+1. Determine
+    - _Let me read the question._
+    - _Let me confirm my understandings. If I'm wrong, please correct me. If an input is like this, the output is supposed to be like this, correct?_
+    - _Let me think for a moment to come up with my solution._
+1. Explain
+    - _Before we just dive into the details, I'll go through exactly how my solution works._
+1. Implement
+    - _Let's get to implementation._
+
+--- 
 ### English Phrases
 #### Colloquial Expressions
 - what we're gonna do is `to do something`
@@ -332,7 +341,7 @@
     - vertex, vertices (plural)
 
 ---
-## Tech Matters
+## 2. Supplementary Tech Contents
 ### Graph Traversal
 Graph traversal is an algorighm to **visit every node** of a graph.
 Depth First Search, one of traversal algorithms follows the following steps:
