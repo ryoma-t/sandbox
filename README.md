@@ -10,6 +10,9 @@
 
 ### Lessons
 - If, after 3 minutes, I cannot come up with any solution other than a brute force approach, ask an interviewer for some clues.
+- Explain a solution in the following steps:
+    - Write it down.
+    - Show that it works with an example.
 - If a test fails, keep track of the stack by writing comments besides the code even though I cannot use any IDEs.
 - When declaring variable, I should choose carefully its data type in terms of how it's supposed to be used. If we store something which must be unique, we should choose a hash table because it takes only linear time complexity to lookup if it contains duplicates.
 
