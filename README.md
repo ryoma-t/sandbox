@@ -278,6 +278,7 @@
     - `odd`, `even`
     - `ascendent`, `descendent`
     - `ancestors`, `descendants`
+    - `vertical`, `horizontal`, `diagonal` and `anti-diagonal`
     - `integer division`, `remainder`: when you divide five by two, the integer division is two, and the remainder is one.
     - `fractional part` or `decimal part`
     - `leading zeros`: leading zeros are those that occur in the leftmost digit positions of numbers.
