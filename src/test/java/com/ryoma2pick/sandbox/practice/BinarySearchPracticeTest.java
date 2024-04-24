@@ -1,5 +1,6 @@
-package com.ryoma2pick.sandbox.dsa.uncategorized;
+package com.ryoma2pick.sandbox.practice;
 
+import com.ryoma2pick.sandbox.practice.BinarySearchPractice;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

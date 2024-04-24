@@ -1,4 +1,4 @@
-package com.ryoma2pick.sandbox.dsa.uncategorized;
+package com.ryoma2pick.sandbox.practice;
 
 import java.util.Collections;
 import java.util.List;
