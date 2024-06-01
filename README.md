@@ -373,3 +373,5 @@ Concrete implementations vary with respect to its graph representation and data 
     - https://www.youtube.com/watch?v=h8eyY7dIiN4&t=992s
     - https://www.youtube.com/watch?v=vZm0lHciFsQ&t=8s
     - https://www.youtube.com/watch?v=by93qH4ACxo
+- System Design:
+    - https://bytebytego.com/courses/system-design-interview
