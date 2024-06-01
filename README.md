@@ -369,9 +369,10 @@ Concrete implementations vary with respect to its graph representation and data 
 
 ---
 ## Reference
-- The videos from which I've learned English phrases:
+- Coding Interview:
     - https://www.youtube.com/watch?v=h8eyY7dIiN4&t=992s
     - https://www.youtube.com/watch?v=vZm0lHciFsQ&t=8s
     - https://www.youtube.com/watch?v=by93qH4ACxo
-- System Design:
+- System Design Interview:
     - https://bytebytego.com/courses/system-design-interview
+    - https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html
