@@ -340,7 +340,43 @@
 ### Overview of Architecture
 ![overview_architecture](https://github.com/ryoma-t/sandbox/assets/11306977/fbaf0f56-5d03-48f9-ac47-9a00933c1e7e)
 
+### Non-Functional Requirements
+- Security
+    - **Encription**: _To what extent should sensitive data be encrypted?_
+    - **Web Security**: _What kind of security risks such as DDoS or other threats advocated by OWASP should we take precautions intensively?_
+- Auditability
+    - **Logging and monitoring**
+- Capacity
+    - **Business Volume**: _How many users and requests should the system handle during peak times?_
+    - **Scalability**: _How quickly can we anticipate the growth of the number of users?_
+- Performance
+    - **Acceptable response time**
+- Availability
+    - **Hours of operation**
+    - **Locations of operation**
+- Reliability
+    - **Recovery Objectives**: _What are the desired recovery time objectives (RTO) and recovery point objectives (RPO) for different failure scenarios?_
+    - **Backup Frequencies**: _How frequently should backups be performed?_
+- Integrity
+    - **Data Consistency**: _How strictly should we guarantee the data consistency?_
+    - **Data Type**: _What kind of data are we going to store? The choice of data store will depend on the type of data we intend to store._
+
 ### Framework for System Design Interview
+1. Propose the agenda to interviewers:
+    - 10 min: speficy requrements
+    - 10 min: design high-level blueprint
+    - 15 min: design deep dive for each feature
+    - 10 min: wrap up and discussion
+1. Specify the requirements, and scope the features we're going to work on
+    - Understand the equestion.
+    - Specify the requirements.
+    - Scope the features.
+1. Design high-level blueprint
+    - As for each feature, draw a diagram with key components. Divide the feature into smaller sub features if needed.
+    - Reach an agreement with the interviewr on the design.
+1. Desing deep dive
+    - Investigate the most important features or components, that we've identified and prioritized with the interviewer, in detail.
+1. Wrap up and discussion 
 
 ---
 ## Supplementary Tech Contents
@@ -375,4 +411,4 @@ Concrete implementations vary with respect to its graph representation and data 
     - https://www.youtube.com/watch?v=by93qH4ACxo
 - System Design Interview:
     - https://bytebytego.com/courses/system-design-interview
-    - https://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ent03-b.html
+    - https://dalbanger.wordpress.com/2014/01/08/a-basic-non-functional-requirements-checklist/
