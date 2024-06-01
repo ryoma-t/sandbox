@@ -1,6 +1,6 @@
 # sandbox
 
-## 1. English for Tech Interviews
+## Coding Interview
 
 ### Mindset
 - Concentrate on the present moment, and then, move on to the next action.
@@ -17,7 +17,7 @@
 - When declaring variable, I should choose carefully its data type in terms of how it's supposed to be used. If we store something which must be unique, we should choose a hash table because it takes only linear time complexity to lookup if it contains duplicates.
 
 
-### Interview Template
+### Framework for Coding Interview
 1. Determine
     - _Let me read the question._
     - _Let me confirm my understandings. If I'm wrong, please correct me. If an input is like this, the output is supposed to be like this, correct?_
@@ -333,8 +333,17 @@
 - Before we just dive into the details and start coding, it's important to know how the `Foo` algorithm works.
 - I'll go through exactly how the `Foo` algorithm works.
 
+
 ---
-## 2. Supplementary Tech Contents
+## System Design Interview
+
+### Overview of Architecture
+![overview_architecture](https://github.com/ryoma-t/sandbox/assets/11306977/fbaf0f56-5d03-48f9-ac47-9a00933c1e7e)
+
+### Framework for System Design Interview
+
+---
+## Supplementary Tech Contents
 ### Graph Traversal
 Graph traversal is an algorighm to **visit every node** of a graph.
 Depth First Search, one of traversal algorithms follows the following steps:
