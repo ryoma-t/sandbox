@@ -367,16 +367,16 @@
     - 10 min: design high-level blueprint
     - 15 min: design deep dive for each feature
     - 10 min: wrap up and discussion
-1. Specify the requirements, and scope the features we're going to work on
+1. Specify the requirements, and scope the features we're going to work on.
     - Understand the equestion.
     - Specify the requirements.
     - Scope the features.
-1. Design high-level blueprint
+1. Design high-level blueprint.
     - As for each feature, draw a diagram with key components. Divide the feature into smaller sub features if needed.
     - Reach an agreement with the interviewr on the design.
-1. Desing deep dive
+1. Desing deep dive.
     - Investigate the most important features or components, that we've identified and prioritized with the interviewer, in detail.
-1. Wrap up and discussion 
+1. Wrap up and discussion .
 
 ---
 ## Supplementary Tech Contents
