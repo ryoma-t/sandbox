@@ -340,6 +340,9 @@
 ### Overview of Architecture
 ![overview_architecture](https://github.com/ryoma-t/sandbox/assets/11306977/fbaf0f56-5d03-48f9-ac47-9a00933c1e7e)
 
+### Functional Requirements
+- **CRUD**: _Can data be deleted or updated?_
+
 ### Non-Functional Requirements
 - Security
     - **Encription**: _To what extent should sensitive data be encrypted?_
@@ -347,7 +350,7 @@
 - Auditability
     - **Logging and monitoring**
 - Capacity
-    - **Business Volume**: _How many users and requests should the system handle during peak times?_
+    - **Business Volume**: _What is the traffic valume?_
     - **Scalability**: _How quickly can we anticipate the growth of the number of users?_
 - Performance
     - **Acceptable response time**
@@ -372,11 +375,13 @@
     - Specify the requirements.
     - Scope the features.
 1. Design high-level blueprint.
+    - **Specify the API endpoints; HTTP method, path, parameters**.
     - As for each feature, draw a diagram with key components. Divide the feature into smaller sub features if needed.
     - Reach an agreement with the interviewr on the design.
-1. Desing deep dive.
+1. Design deep dive.
+    - **Specify the data model.**
     - Investigate the most important features or components, that we've identified and prioritized with the interviewer, in detail.
-1. Wrap up and discussion .
+1. Wrap up and discussion.
 
 ---
 ## Supplementary Tech Contents
