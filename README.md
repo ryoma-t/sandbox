@@ -367,6 +367,9 @@
 ### Other Questions
 - _Is there anyting else I should pay attention to?_
 
+### Related Concepts
+- idenpotency
+
 ### Framework for System Design Interview
 1. Propose the agenda to interviewers:
     - 10 min: speficy requrements
