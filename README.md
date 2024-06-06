@@ -364,6 +364,9 @@
     - **Data Consistency**: _How strictly should we guarantee the data consistency?_
     - **Data Type**: _What kind of data are we going to store? The choice of data store will depend on the type of data we intend to store._
 
+### Other Questions
+- _Is there anyting else I should pay attention to?_
+
 ### Framework for System Design Interview
 1. Propose the agenda to interviewers:
     - 10 min: speficy requrements
